@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "eslint": "^10.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint:js": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "lint:backend": "cd PFE-AntiSamsar-Backend && npm run lint",
+    "lint:frontend": "cd PFE-AntiSamsar-Frontend && flutter analyze",
+    "lint": "npm run lint:backend && npm run lint:frontend"
+  }
+}
